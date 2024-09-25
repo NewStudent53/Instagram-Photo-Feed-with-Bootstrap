@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Instagram Photo Feed with Bootstrap</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-light bg-light p-1">
+        <a class="navbar-brand" href="#">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram™</span>
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item align-self-center">
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal">
+                    Create a new post
+                </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-lg btn-link px-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item text-right" href="#">Profile</a>
+                    <a class="dropdown-item text-right" href="#">Accesibility</a>
+                    <a class="dropdown-item text-right" data-toggle="modal" data-target="#exampleModal">Privacy and Data</a>
+                    <hr></hr>
+                    <a class="dropdown-item text-right" href="#">Log Out</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="modal fade" id="exampleModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5>Create a new post</h5>
+                    <hr></hr>
+                    Caption:
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
+                        <i class="fas fa-camera"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-2" id="top-row"><br /><br /></div>
+        <div class="row p-2 mb-3" id="nav-pills">
+            <div class="mx-auto">
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><i class="fas fa-th"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="tab-content">
+            <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane active col-sm-12 col-md-6 mx-auto">
+                <div class="row">
+                    <div class="col-8 mt-2">
+                        <h4>Test</h4>
+                    </div> 
+                    <div class="col-4 mt-3">
+                        <h6>99/99</h6>
+                    </div> 
+                    <div class="col-12 p-0">
+                        <img src="https://hips.hearstapps.com/goodhousekeeping/assets/17/30/pembroke-welsh-corgi.jpg" style="width:100%;"></img>
+                    </div> 
+                    <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales tellus non efficitur faucibus.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8 mt-2">
+                        <h4>Test</h4>
+                    </div> 
+                    <div class="col-4 mt-3">
+                        <h6>99/99</h6>
+                    </div> 
+                    <div class="col-12 p-0">
+                        <img src="https://www.petage.com/wp-content/uploads/2017/03/Cutie-patootie.jpg" style="width:100%;"></img>
+                    </div> 
+                    <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales tellus non efficitur faucibus.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8 mt-2">
+                        <h4>Test</h4>
+                    </div> 
+                    <div class="col-4 mt-3">
+                        <h6>99/99</h6>
+                    </div> 
+                    <div class="col-12 p-0">
+                        <img src="https://i.pinimg.com/236x/1a/d3/44/1ad344dfa9149e3e640e5afd02ea512e.jpg" style="width:100%;"></img>
+                    </div> 
+                    <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales tellus non efficitur faucibus.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane col-sm-12 mx-auto p-0" style="background:white;">
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://img.pikbest.com/origin/09/30/88/77bpIkbEsTD87.jpg!w700wp" style="width:100%;"></img>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://i.pinimg.com/236x/a5/72/9b/a5729b7388ef6b3964be8c689ee80430.jpg" style="width:100%;"></img>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <img src="https://i.ytimg.com/vi/QZLq9hs_cqc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLALvtdovqhKhkPvu3wJYT_XVILQ_Q" style="width:100%;"></img>
+                    </div>
+                </div>
+
+                <div class="row p-2 mb-3" id="nav-pills">
+                    <div class="mx-auto">
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://i.pinimg.com/474x/ca/12/30/ca12303ea388591f64a905fb3c97d46e.jpg" style="width:80%;"></img>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://w0.peakpx.com/wallpaper/364/31/HD-wallpaper-the-good-boi-cute-dog-funny-good-boi-meme-shiba.jpg" style="width:80%;"></img>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://ih1.redbubble.net/image.3575764634.2287/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" style="width:80%;"></img>
+                    </div>
+                </div>
+
+                <div class="row p-2 mb-3" id="nav-pills">
+                    <div class="mx-auto">
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fwww.lolvvv.com%2Fwp-content%2Fuploads%2F2023%2F08%2Fsadge-pepe.jpg&w=1200&q=75" style="width:80%;"></img>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://cdn1.jigidi.com/thumbs/QMD6HLLU/l" style="width:80%;"></img>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fwww.lolvvv.com%2Fwp-content%2Fuploads%2F2023%2F08%2Fsadge-emote-2.jpg&w=1200&q=75" style="width:80%;"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>        
+</body>
+</html>
